@@ -1,0 +1,53 @@
+#back{position:absolute;left:0px;top:0px;z-index:2;width:100%; height:auto;}
+#backheader{background-repeat:no-repeat;width:100%;min-height:60px;max-height:70px;z-index:1}
+#belowhead{background-image: -webkit-gradient(linear, left top, left bottom, from( #4DA4D4 /*{a-bar-background-start}*/), to( #3B90C5 /*{a-bar-background-end}*/))!important; /* Saf4+, Chrome */
+background-image: -webkit-linear-gradient(top,  #4DA4D4 /*{a-bar-background-start}*/,  #3B90C5 /*{a-bar-background-end}*/)!important; /* Chrome 10+, Saf5.1+ */
+margin:0px; padding:0px;}
+#secheader,#secheader2{
+background-image: -webkit-gradient(linear, left top, left bottom, from( #4DA4D4 /*{a-bar-background-start}*/), to( #3B90C5 /*{a-bar-background-end}*/))!important; /* Saf4+, Chrome */
+background-image: -webkit-linear-gradient(top,  #4DA4D4 /*{a-bar-background-start}*/,  #d3B90C5 /*{a-bar-background-end}*/)!important; /* Chrome 10+, Saf5.1+ */
+color:white;text-align:center;padding-top:17px;min-height:40px;max-height:50px;font-size:120%;}
+
+#secheader1{
+background-image: -webkit-gradient(linear, left top, left bottom, from( #d91671 /*{a-bar-background-start}*/), to( #d91671 /*{a-bar-background-end}*/))!important; /* Saf4+, Chrome */
+background-image: -webkit-linear-gradient(top,  #d91671 /*{a-bar-background-start}*/,  #d91671 /*{a-bar-background-end}*/)!important; /* Chrome 10+, Saf5.1+ */
+color:white;text-align:center;padding-top:17px;min-height:40px;max-height:50px;font-size:120%;}
+
+#search{min-height:40px;max-height:50px;margin:0px; padding:0px;}
+#autocomplete{z-index:5;position:absolute;width:98%; }
+#cityname .ui-btn-text {font-size:120%;font-weight:501; }
+#se{height:35px;margin:0px;border-color:blue;padding-top:13px;padding-left:6px;padding-right:6px;padding-bottom:0px;background-image:url(images/blue_grad.png);background-repeat:repeat;}
+#cityname{margin-top:8px;margin-right:5px;margin-left:5px;text-align:left;-webkit-border-radius: .6em;border-radius: .6em;}
+#backicon{position:absolute;margin:10px;min-height:35px;max-height:40px;min-width:35px;max-width:40px;}
+#right{position:absolute; right:10px;}
+#searchi{position:absolute; right:10px;}
+#next,#arright,#cross{position:absolute; right:10px;}
+#left,#arleft{position:absolute; left:10px;}
+#searchicon{position:absolute; right:10px;margin-top:5px;}
+#try{height:40px;}
+#gridimgB{}
+
+#sublist img
+{
+position:absolute; top:20px;
+}
+#sublist h3
+{
+color:rgb(241,29,114);
+}
+#sublist  .ui-li-heading
+{
+font-size:95% !important;
+	 font-weight: 515 !important;
+
+}
+
+#tabbernav .ui-btn-text,#list .ui-btn-text,#citylist .ui-btn-text,#hotlist .ui-btn-text, #detaillist .ui-btn-text  {
+     /* Play with font size of the text */
+	 font-size:85% !important;
+	 font-weight: 515 !important;
+}
+
+
+
+

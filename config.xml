@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns = "http://www.w3.org/ns/widgets"
+xmlns:gap = "http://phonegap.com/ns/1.0"
+id = "com.phonegapessentials.myCity5"
+version = "1.0.0">
+
+  <name>MyDemo</name>
+  <description>An example application that uses the PhoneGap Geolocation API</description>
+  <author href="http://johnwargo.com"
+  email="john@johnwargo.com">John M. Wargo</author>
+  <gap:platforms>
+    <gap:platform name="android" minVersion="2.1" />
+    <gap:platform name="webos" />
+    <gap:platform name="symbian.wrt" />
+    <gap:platform name="blackberry" project="widgets"/>
+  </gap:platforms>                                                                                              
+  <!-- If you do not want any permissions to be added to your app,
+  add the following tag to your config.xml instead; you will still
+  have the INTERNET permission on your app, which PhoneGap requires: -->
+  <!-- <preference name="permissions" value="none"/> -->
+  <feature name="http://api.phonegap.com/1.0/battery" />
+  <feature name="http://api.phonegap.com/1.0/camera" />
+  <feature name="http://api.phonegap.com/1.0/contacts" />
+  <feature name="http://api.phonegap.com/1.0/file" />
+  <feature name="http://api.phonegap.com/1.0/geolocation" />
+  <feature name="http://api.phonegap.com/1.0/media" />
+  <feature name="http://api.phonegap.com/1.0/network" />
+  <feature name="http://api.phonegap.com/1.0/notification" />
+
+   <icon src="icon.png" />
+    <icon src="iconl.png"   gap:platform="android"    gap:density="ldpi" />
+    <icon src="iconm.png"   gap:platform="android"    gap:density="mdpi" />
+    <icon src="iconh.png"   gap:platform="android"    gap:density="hdpi" />
+    <icon src="iconx.png"  gap:platform="android"    gap:density="xhdpi" />
+	
+   <preference name="permissions" value="none"/>
+   <preference name="target-device" value="universal" />
+  <preference name="orientation" value="protrait" />
+  <preference name="fullscreen" value="true" />
+  <preferenceS name="KeyboardShrinksView" value="true" />
+  <preference name="webviewbounce" value="true" />
+  <preference name="show-splash-screen-spinner" value="true" />
+  <preference name="auto-hide-splash-screen" value="true" />
+  <preference name="android-minSdkVersion" value="8" />
+  <preference name="android-installLocation" value="auto" />
+  
+  <gap:splash src="landingm.png" />
+	
+  <gap:splash gap:density="ldpi" gap:platform="android" src="landingl.png" />
+  <gap:splash gap:density="mdpi" gap:platform="android" src="landingm.png" />
+  <gap:splash gap:density="hdpi" gap:platform="android" src="landingh.png" />
+  <gap:splash gap:density="xhdpi" gap:platform="android" src="landingx.png" />
+   
+    <access origin="*" />
+</widget>

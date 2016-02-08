@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width,height=device-height,target-densitydpi=medium-dpi,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+	<link href="css/jquerymobile.css" rel="stylesheet"/>
+	<link href="css/styles1.css" rel="stylesheet"/>
+	<link href="css/mod.css" rel="stylesheet"/>
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/jquerymobile.js"></script>
+	<script type="text/javascript" src="in.js"></script>
+	</head>
+
+
+<body>
+
+<!-- -------------------------------------------------------------------------INDEX PAGE ---------------------------------------------------------------------------- -->
+	
+	<article data-role="page" id="index" >
+		<div data-role="header" data-position="fixed" id="belowhead" data-theme="c" data-tap-toggle="false" style="border:0px;" >
+			<div align="center" style="background-image:url('css/images/yellow_strip.jpg');background-repeat:repeat-x;min-height:60px;max-height:70px;">
+				<img  src="css/images/logo1.png" alt="main logo" vspace="2"/>
+			</div>
+			<div id="citybtn">
+			<div data-role="navbar"  data-corners='true' data-inset="true" style="border:0px;" >
+				<ul>
+					<li>
+						<a  id="cityname" href="javascript:city()" data-corners="true" data-tap="true">
+							Where..?
+						</a>
+					</li>
+				</ul>
+			</div>
+			</div>
+			<form style="margin-right:5px;margin-left:5px; border:0px;">
+				<a href="javascript:del()" data-role="button" data-icon="delete" data-theme="c" data-inline="true" data-iconpos="notext" id="cross">Delete</a>
+				<input type="text" name="name" id="basic"  placeholder="Search here..." onkeyup="listdisp()"/>
+				
+			</form>	
+		</div>
+		<div data-role="content" style="padding:0px; margin:0px;">
+			<ul data-role="listview" data-inset="true" data-corners='false' id="tabbernav" style="padding:0px; margin:0px;">
+			</ul>
+		</div>
+		<div id="catdisp">
+				<fieldset class="ui-grid-b" style="padding-top:2%;position:relative;z-index:3;" id="gridl">
+					<img id="gridimg" class="ui-block-b" src="css/images/cat/wedding.png" onclick="link1(30,'Wedding')"/>
+					<img id="gridimg" class="ui-block-b" src="css/images/cat/apparels.png"onclick="link1(10,'Apparels')"/>
+					<img id="gridimg" class="ui-block-c" src="css/images/cat/astrology.png" onclick="link1(34,'Astrology')" />
+					<img id="gridimg" class="ui-block-a" src="css/images/cat/atms.png" onclick="link1(52,'ATMs')" />
+					<img id="gridimg" class="ui-block-b" src="css/images/cat/automobile.png" onclick="link1(7,'Automobile')"/ >
+					<img id="gridimg" class="ui-block-c" src="css/images/cat/banquets.png" onclick="link1(25,'Banquets')" />
+					<img id="gridimg" class="ui-block-a" src="css/images/cat/beautyspa.png" onclick="link1(11,'Beauty & Spa')" />
+					<img id="gridimg" class="ui-block-b" src="css/images/cat/books.png" onclick="link1(35,'books')" />
+					<img id="gridimg" class="ui-block-c" src="css/images/cat/carrental.png" onclick="link1(32,'Car Rental')" />
+					<img id="gridimg" class="ui-block-a" src="css/images/cat/chemists.png" onclick="link1(36,'Chemists')" />	
+					<img id="gridimg" class="ui-block-b" src="css/images/cat/club.png" onclick="link1(37,'Club')" />
+					<img id="gridimg" class="ui-block-c" src="css/images/cat/computers.png" onclick="link1(6,'Computers')"/>
+					<img id="gridimg" class="ui-block-a" src="css/images/cat/consultants.png" onclick="link1(38,'Consultants')" />
+					<img id="gridimg" class="ui-block-b" src="css/images/cat/diamond.png" onclick="link1(159,'Diamond')" />
+					<img id="gridimg" class="ui-block-c" src="css/images/cat/doctors.png" onclick="link1(12,'Doctors')" />
+					<img id="gridimg" class="ui-block-a" src="css/images/cat/education.png" onclick="link1(13,'Education')" />
+					<img id="gridimg" class="ui-block-b" src="css/images/cat/electronics.png" onclick="link1(14,'Electronics')" />
+					<img id="gridimg" class="ui-block-c" src="css/images/cat/emergency.png" onclick="link1(28,'Emergency')" />
+					<img id="gridimg" class="ui-block-a" src="css/images/cat/entertaiment.png" onclick="link1(39,'Entertainment')" />
+					<img id="gridimg" class="ui-block-b" src="css/images/cat/essentials.png" onclick="link1(9,'Essentials')" />
+					<img id="gridimg" class="ui-block-c" src="css/images/cat/events.png" onclick="link1(49,'Events')" />
+					<img id="gridimg" class="ui-block-a" src="css/images/cat/fitness.png" onclick="link1(40,'Fitness')" />
+					<img id="gridimg" class="ui-block-b" src="css/images/cat/food.png" onclick="link1(15,'Food')" />
+					<img id="gridimg" class="ui-block-c" src="css/images/cat/furniture.png" onclick="link1(16,'Furniture')" />
+					<img id="gridimg" class="ui-block-a" src="css/images/cat/gemsjewellery.png" onclick="link1(31,'Gems & Jewllery')" />
+					<img id="gridimg" class="ui-block-b" src="css/images/cat/gifts.png" onclick="link1(41,'Gifts')" />
+					<img id="gridimg" class="ui-block-c" src="css/images/cat/government.png" onclick="link1(42,'Government')" />
+					<img id="gridimg" class="ui-block-a" src="css/images/cat/grocery.png" onclick="link1(51,'Grocery')" />
+					<img id="gridimg" class="ui-block-b" src="css/images/cat/handyman.png" onclick="link1(43,'Handyman')" />
+					<img id="gridimg" class="ui-block-c" src="css/images/cat/hobbyclasses.png" onclick="link1(27,'Hobby Classes')" />
+					<img id="gridimg" class="ui-block-a" src="css/images/cat/home.png" onclick="link1(17,'Home')" />
+					<img id="gridimg" class="ui-block-b" src="css/images/cat/hospitals.png" onclick="link1(44,'Hospitals')" />
+					<img id="gridimg" class="ui-block-c" src="css/images/cat/hotels.png" onclick="link1(3,'Hotels')" />
+					<img id="gridimg" class="ui-block-a" src="css/images/cat/jobs.png" onclick="link1(18,'Jobs')" />
+					<img id="gridimg" class="ui-block-b" src="css/images/cat/lifestyle.png" onclick="link1(19,'Lifestyle')" />
+					<img id="gridimg" class="ui-block-c" src="css/images/cat/manufacturers.png" onclick="link1(160,'Manufacturers')" />
+					<img id="gridimg" class="ui-block-a" src="css/images/cat/mobilephone.png" onclick="link1(20,'Mobile Phone')" />
+					<img id="gridimg" class="ui-block-b" src="css/images/cat/movies.png" onclick="link1(1,'Movies')" />
+					<img id="gridimg" class="ui-block-c" src="css/images/cat/nightlife.png" onclick="link1(26,'Night Life')" />
+					<img id="gridimg" class="ui-block-a" src="css/images/cat/party.png" onclick="link1(45,'party')" />
+					<img id="gridimg" class="ui-block-b" src="css/images/cat/personalfinance.png" onclick="link1(8,'Personal Finance')" />
+					<img id="gridimg" class="ui-block-c" src="css/images/cat/petrolpumps.png" onclick="link1(50,'Petrol Pumps')" />
+					<img id="gridimg" class="ui-block-a" src="css/images/cat/pets.png" onclick="link1(46,'Pets')" />
+					<img id="gridimg" class="ui-block-b" src="css/images/cat/pizza.png" onclick="link1(47,'Pizza')" />
+					<img id="gridimg" class="ui-block-c" src="css/images/cat/realestate.png" onclick="link1(21,'Real Estates')" />
+					<img id="gridimg" class="ui-block-a" src="css/images/cat/repairs.png" onclick="link1(4,'Repairs')" />
+					<img id="gridimg" class="ui-block-b" src="css/images/cat/resorts.png" onclick="link1(22,'Resorts')" />
+					<img id="gridimg" class="ui-block-c" src="css/images/cat/restaurants.png" onclick="link1(2,'Restaurents')" />
+					<img id="gridimg" class="ui-block-a" src="css/images/cat/security.png" onclick="link1(29,'Security')" />
+					<img id="gridimg" class="ui-block-b" src="css/images/cat/wedding.png" onclick="link1(30,'Wedding')" />
+					<img id="gridimg" class="ui-block-c" src="css/images/cat/shopping.png" onclick="link1(23,'Shopping')" />
+					<img id="gridimg" class="ui-block-a" src="css/images/cat/taxis.png" onclick="link1(24,'Taxis')" />
+					<img id="gridimg" class="ui-block-b" src="css/images/cat/towing.png" onclick="link1(48,'Towing')" />
+					<img id="gridimg" class="ui-block-c" src="css/images/cat/travel.png" onclick="link1(5,'Travel')" />
+				</fieldset>
+		</div>	
+		<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-transition="none" >
+			<div data-role="navbar">
+				<ul><li><a href="#" data-icon="near_me" id="near" >Near Me</a></li>
+				<li><a href="#pageinbox" data-transition="none" data-icon="inbox" id="inbox" >Inbox</a></li>
+				<li><a href="#addlistings" data-transition="none" data-icon="addlist" id="add">Add Listing</a></li>
+				<li><a href="#pagehotdeals" data-transition="none" data-icon="star1" id="hot" >Hot Deals</a></li>
+				<li><a href="#positionWindow" data-role="button" data-rel="popup" data-position-to="window" data-icon="more" id="more">More</a></li>
+				</ul>
+			</div>
+		</div>
+		<div data-role="popup" id="positionOrigin" class="ui-content" data-theme="d">
+			<p>I am positioned over the origin.</p>
+		</div>
+
+		<script src="main.js"></script>
+	</article>
+	
+	
+	
+	
+	<!-- -------------------------------------------------------------------------CITY PAGE ---------------------------------------------------------------------------- -->
+	
+	
+	
+	<article data-role="page" id="pagecity">
+		<div data-role="header" data-position="fixed" id="belowhead" data-tap-toggle="false" data-theme="c">
+			<img id="backicon" class="ui-block-a" src="css/images/back_button.png" onclick="goBack()" />
+			<div align="center" style="background-image:url('css/images/yellow_strip.jpg');background-repeat:repeat-x;min-height:60px;max-height:70px;">
+				<img  src="css/images/logo1.png" alt="main logo" vspace="2"/>
+			</div>
+			<div>
+				<a  data-role="button" data-icon="search" data-inline="true" data-theme="c" id="searchi" data-iconpos="notext" ></a>
+				<input type="text"  id="searchmain"   data-tap-toggle="true"  data-corners="false"  placeholder='Select City'/>
+			</div>
+			
+		</div>
+	
+
+
+  
+
+		<div data-role="listview" data-corners='false' data-theme='d' data-inset="true" id="citylist">
+         
+      
+		</div>
+		
+
+		<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-transition="none" >
+			<div data-role="navbar">
+				<ul><li><a href="#" data-icon="near_me" id="near" >Near Me</a></li>
+				<li><a href="#pageinbox" data-transition="none" data-icon="inbox" id="inbox" >Inbox</a></li>
+				<li><a href="#addlistings" data-transition="none" data-icon="addlist" id="add">Add Listing</a></li>
+				<li><a href="#pagehotdeals" data-transition="none" data-icon="star1" id="hot" >Hot Deals</a></li>
+				<li><a href="#" data-icon="more" id="more">More</a></li>
+				</ul>
+			</div>
+		</div>
+		<script src="city.js"></script>
+		</article>
+		
+		
+		
+		
+		
+		
+		
+		
+	<!-- ------------------------------------------------------------------------- SUB_CAT ---------------------------------------------------------------------------- -->
+		
+		
+	<article data-role="page" id="sub_cat">
+		<div data-role="header" data-position="fixed" id="belowhead" data-tap-toggle="false" style="border:0px;">
+			<img id="backicon" class="ui-block-a" src="css/images/back_button.png" onclick="goBacks()" />
+			<div align="center" style="background-image:url('css/images/yellow_strip.jpg');background-repeat:repeat-x;min-height:60px;max-height:70px;">
+				<img  src="css/images/logo1.png" alt="main logo" vspace="2"/>
+			</div>
+			<div id="secheader">Option for </div>
+			
+		</div>
+		<div data-role="listview" data-inset="true" data-corners='false' id="list">
+      
+		</div>
+		<div class="ui-icon-alt"><!-- Class added to the wrapper -->
+			<div style="text-align:center;font-size:20px;">
+				<a href="javascript:prev()" data-role="button" data-icon="arrow-l" data-inline="true" data-theme="c" id="left" data-iconpos="notext" >Prev</a>
+				<span id="pgno" style="display:inline-block;vertical-align: middle; line-height:45px; height:50%; font-size:77%; font-weight:700;"></span>
+				<a href="javascript:next()" data-role="button" data-icon="arrow-r" data-theme="c" data-inline="true" data-iconpos="notext" id="right">Next</a>
+			</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-transition="none" >
+			<div data-role="navbar">
+				<ul><li><a href="#" data-icon="near_me" id="near" >Near Me</a></li>
+				<li><a href="#pageinbox" data-transition="none" data-icon="inbox" id="inbox" >Inbox</a></li>
+				<li><a href="#addlistings" data-transition="none" data-icon="addlist" id="add">Add Listing</a></li>
+				<li><a href="#pagehotdeals" data-transition="none" data-icon="star1" id="hot" >Hot Deals</a></li>
+				<li><a href="#" data-icon="more" id="more">More</a></li>
+				</ul>
+			</div>
+		</div>
+	<script type="text/javascript" src="sub.js"></script>
+	<script>
+		
+		function goBacks()
+		{
+		//alert("back");
+		// alert("goin");
+		sessionStorage.setItem("page_no",1);
+		window.history.back();
+		}
+// next page sub_cat		
+		function next(){
+			//alert("next");
+			var no = parseInt(sessionStorage.getItem("no_pages"),10);
+			var cur = parseInt(sessionStorage.getItem("page_no"),10);
+			
+			if(cur<no)
+			{
+			
+			cur=cur+1;
+			sessionStorage.setItem("page_no",cur);
+			//alert("next");
+			$.mobile.changePage( "#sub_cat", { transition: "none", changeHash: true, allowSamePageTransition:true });
+			}
+		}		
+		
+// prev page sub_cat		
+		function prev(){
+		    //alert("prev");
+			var cur = parseInt(sessionStorage.getItem("page_no"),10);
+			if(cur>1)
+			{	
+			//alert("prev");
+			cur=cur-1;
+			sessionStorage.setItem("page_no",cur);
+			//alert("next");
+			$.mobile.changePage( "#sub_cat", { transition: "none", changeHash: true, allowSamePageTransition: true });
+			}
+		}
+	</script>
+	</article>
+	
+	
+	
+	
+	<!-- ---------------------------------------------------------------SUB_SUB_CAT  ------------------------------------------------------------------------------------ -->
+	
+	<article data-role="page" id="pagesub">
+		<div data-role="header" data-position="fixed" id="belowhead" data-tap-toggle="false" data-theme="c">
+					
+					<img id="backicon" class="ui-block-a" src="css/images/back_button.png" onclick="goBackss()" />
+					
+			<div align="center" style="background-image:url('css/images/yellow_strip.jpg');background-repeat:repeat-x;min-height:60px;max-height:70px;">
+					<img  src="css/images/logo1.png" alt="main logo" vspace="2"/>
+					</div>
+				
+			<div><a  data-role="button" data-icon="search" data-inline="true" data-theme="c" id="searchi" data-iconpos="notext" ></a>
+				<input type="text"  id="searchmain"  data-tap-toggle="true"  data-corners="false"  placeholder='search here...'/>
+			</div>
+			
+		</div>
+	
+
+
+  
+
+		<div data-role="listview" data-corners='false' data-theme='d' data-inset="true" id="sublist">
+			<!--<li>
+				<div class="custom_bullet">
+				<p>
+					<h3 style="max-width=50%">Globus 12345678901234567898901234567890</h3>
+				</p>
+					<p>bandra west</p>
+				</div>
+				<div>
+					<img src='css/images/deal_tag.png' onclick='deal()' style=' right:80px;'/>
+					<img src='css/images/map_b.png' onclick='map()' style='right:45px;'/>
+					<img src='css/images/phone_b.png' onclick='call()' style=' right:10px;'/>
+					
+					
+				</div>
+			</li>-->
+      
+		</div>
+		<div class="ui-icon-alt"><!-- Class added to the wrapper -->
+			<div style="text-align:center;font-size:20px;">
+				<a href="javascript:prevl()" data-role="button" data-icon="arrow-l" data-inline="true" data-theme="c" id="arleft" data-iconpos="notext" >Prev</a>
+				<span id="pgnos" style="vertical-align: middle;display:inline-block;line-height:45px; height:50%; font-size:77%;font-weight:700;"></span>
+				<a href="javascript:nextl()" data-role="button" data-icon="arrow-r" data-theme="c" data-inline="true" data-iconpos="notext" id="arright">Next</a>
+							</div>
+		</div>
+		<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-transition="none" >
+			<div data-role="navbar">
+				<ul><li><a href="#" data-icon="near_me" id="near" >Near Me</a></li>
+				<li><a href="#pageinbox" data-transition="none" data-icon="inbox" id="inbox" >Inbox</a></li>
+				<li><a href="#addlistings" data-transition="none"data-icon="addlist" id="add">Add Listing</a></li>
+				<li><a href="#pagehotdeals" data-transition="none" data-icon="star1" id="hot" >Hot Deals</a></li>
+				<li><a href="#" data-icon="more" id="more">More</a></li>
+				</ul>
+			</div>
+		</div>
+		<script src="sub_sub.js"></script>
+		<script>
+		function goBackss()
+			{
+		//alert("goin");
+			sessionStorage.setItem("sub_page_no",1);
+			window.history.back();
+			}
+		function nextl(){
+			//alert("next");
+			var no = parseInt(sessionStorage.getItem("sub_no_pages"),10);
+			var cur = parseInt(sessionStorage.getItem("sub_page_no"),10);
+			//alert("no of pages:"+ no+" page no:"+cur);
+			if(cur<no)
+			{
+			//alert("in");
+			cur=cur+1;
+			//alert(cur);
+			sessionStorage.setItem("sub_page_no",cur);
+		$.mobile.changePage( "#pagesub", { transition: "none", changeHash: true, allowSamePageTransition:true });
+			}
+	}		
+	function prevl(){
+		    //alert("prev");
+			var cur = parseInt(sessionStorage.getItem("sub_page_no"),10);
+			if(cur>1)
+			{	
+			cur=cur-1;
+			//alert(cur);
+			sessionStorage.setItem("sub_page_no",cur);
+			$.mobile.changePage( "#pagesub", { transition: "none", changeHash: true, allowSamePageTransition:true });
+			}
+	}	 
+		
+		
+		</script>
+	</article>
+	
+	<!-- -------------------------------------------------------------------------DETAIL PAGE ---------------------------------------------------------------------------- -->
+	
+	
+	<article data-role="page" id="pagedetail">
+		<div data-role="header" data-position="fixed" id="belowhead" data-tap-toggle="false" data-theme="c">
+			<img id="backicon" class="ui-block-a" src="css/images/back_button.png" onclick="goBack()" />
+			<div align="center" style="background-image:url('css/images/yellow_strip.jpg');background-repeat:repeat-x;min-height:60px;max-height:70px;">
+				<img  src="css/images/logo1.png" alt="main logo" vspace="2"/>
+			</div>
+			<div id="secheader2" style="font-weight:400;"></div>
+		</div>
+	
+
+
+  
+
+		<div data-role="listview" data-corners='false' data-theme='d' data-inset="true" id="detaillist" style="font-size:85% !important;font-weight: 515 !important;">
+			
+				
+		</div>
+			
+		
+		<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-transition="none" >
+			<div data-role="navbar">
+				<ul><li><a href="#" data-icon="near_me" id="near" >Near Me</a></li>
+				<li><a href="#pageinbox" data-transition="none" data-icon="inbox" id="inbox" >Inbox</a></li>
+				<li><a href="#addlistings" data-transition="none"data-icon="addlist" id="add">Add Listing</a></li>
+				<li><a href="#pagehotdeals" data-transition="none" data-icon="star1" id="hot" >Hot Deals</a></li>
+				<li><a href="#" data-icon="more" id="more">More</a></li>
+				</ul>
+			</div>
+		</div>
+	<script src="detail.js"></script>	
+	</article>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<!-- -------------------------------------------------------------------------INBOX PAGE ---------------------------------------------------------------------------- -->
+	
+	
+	
+	<article data-role="page" id="pageinbox">
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" style="border:0px;">
+			<img id="backicon" class="ui-block-a" src="css/images/back_button.png" onclick="goBack()" />
+					
+			<div align="center" style="background-image:url('css/images/yellow_strip.jpg');background-repeat:repeat-x;min-height:60px;max-height:70px;">
+					<img  src="css/images/logo1.png" alt="main logo" vspace="2"/>
+					</div>
+
+			<div id="secheader">INBOX</div>
+			
+		</div>
+	
+
+
+  
+
+		<div data-role="listview" data-corners="false" data-inset="true" data-theme='d' id="inboxlist">
+		
+		</div>
+
+
+		<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-transition="none" >
+			<div data-role="navbar">
+				<ul><li><a href="#" data-icon="near_me" id="near" >Near Me</a></li>
+				<li><a href="#"  data-icon="inboxsel" id="inboxsel" >Inbox</a></li>
+				<li><a href="#addlistings" data-transition="none"data-icon="addlist" id="add">Add Listing</a></li>
+				<li><a href="#pagehotdeals" data-transition="none" data-icon="star1" id="hot" >Hot Deals</a></li>
+				<li><a href="#" data-icon="more" id="more">More</a></li>
+				</ul>
+			</div>
+		</div>
+
+	
+	<script src="inbox.js"></script>
+	</article>
+
+<!-- -------------------------------------------------------------------------ADD LISTING PAGE---------------------------------------------------------------------------- -->	
+	<article data-role="page" id="addlistings">
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" style="border:0px;">
+			<img id="backicon" class="ui-block-a" src="css/images/back_button.png" onclick="goBack()" />
+					
+			<div align="center" style="background-image:url('css/images/yellow_strip.jpg');background-repeat:repeat-x;min-height:60px;max-height:70px;">
+					<img  src="css/images/logo1.png" alt="main logo" vspace="2"/>
+					</div>
+
+				 
+			<div id="secheader">ADD LISTING</div>
+			
+		</div>
+	
+
+
+  
+
+		<div data-role="content" data-inset="true">
+		<div style="color:blue; text-align:center;">Just fill following details to add your listing</div>
+      <input type="text" id="city" placeholder="Enter Your City"  data-clear-btn="true"/>
+	  <input type="text" id="comp" placeholder="Enter Your Company Name(e.g. ABC Pvt. Ltd.)"  data-clear-btn="true"/>
+	  <input type="tel" id="mob" placeholder="Enter Your Mobile Number"  data-clear-btn="true" />
+	  <input type="text" id="con" placeholder="Enter Contact Person(e.g. Sanjeev)"  data-clear-btn="true"/>
+	  <input type="text" id="city" placeholder="Enter Business Category"  data-clear-btn="true"/>
+	  <center><a class="sub" data-role="button" data-inline="true" data-corners="false">Submit</a></center>
+	  </div>
+
+
+		<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-transition="none" >
+			<div data-role="navbar">
+				<ul><li><a href="#" data-icon="near_me" id="near" >Near Me</a></li>
+				<li><a href="#pageinbox" data-transition="none"  data-icon="inbox" id="inbox" >Inbox</a></li>
+				<li><a href="#"data-icon="addlistsel" id="addsel">Add Listing</a></li>
+				<li><a href="#pagehotdeals" data-transition="none"  data-icon="star1" id="hot" >Hot Deals</a></li>
+				<li><a href="#" data-icon="more" id="more">More</a></li>
+				</ul>
+			</div>
+		</div>
+	</article>
+
+	
+
+
+<!-- ---------------------------------------------------------------------------  HOTDEALS PAGE  ---------------------------------------------------------------------------- -->
+
+	<article data-role="page" id="pagehotdeals">
+		<div data-role="header" data-position="fixed" data-tap-toggle="false" style="border:0px;">
+			<img id="backicon" class="ui-block-a" src="css/images/back_button.png" onclick="goBack()" />
+					
+			<div align="center" style="background-image:url('css/images/yellow_strip.jpg');background-repeat:repeat-x;min-height:60px;max-height:70px;">
+					<img  src="css/images/logo1.png" alt="main logo" vspace="2" />
+					</div>
+
+			<div id="secheader1"  >HOT DEALS</div>
+			</div>
+	
+
+
+  
+
+		<div data-role="content"  data-inset="true" data-corners='false' id="hotlist">
+		
+		</div>
+
+
+		<div data-role="footer" data-position="fixed" data-tap-toggle="false" data-transition="none" >
+			<div data-role="navbar">
+				<ul><li><a href="#" data-icon="near_me" id="near" >Near Me</a></li>
+				<li><a href="#pageinbox" data-transition="none"  data-icon="inbox" id="inbox" >Inbox</a></li>
+				<li><a href="#addlistings" data-transition="none" data-icon="addlist" id="add">Add Listing</a></li>
+				<li><a href="#" data-icon="starY" id="hotsel" >Hot Deals</a></li>
+				<li><a href="#" data-icon="more" id="more">More</a></li>
+				</ul>
+			</div>
+		</div>
+		<script src="hotdeals.js"></script>
+	</article>	
+</body>
+</html>

@@ -1,0 +1,361 @@
+ .ui-icon-star1 {
+	
+	box-shadow: none !important;
+	
+	 background: transparent !important;
+	 background-size:100%!important;
+	 background-repeat:no-repeat !important;
+	background-image: url("images/icons/hotdeali.png") !important;/*I added the !important, I found that this rule was being overwritten*/
+	background-position: 	0px 0px !important;
+	-webkit-border-radius: 0px !important;
+	border-radius: 0px !important;
+}
+ .ui-icon-starY {
+	
+	box-shadow: none !important;
+	
+	 background: transparent !important;
+	 background-size:100%!important;
+	 background-repeat:no-repeat !important;
+	background-image: url("images/icons/hotdeali_hover.png") !important;/*I added the !important, I found that this rule was being overwritten*/
+	background-position: 	0px 0px !important;
+	-webkit-border-radius: 0px !important;
+	border-radius: 0px !important;
+}
+ .ui-bar-a #hot:hover{
+	/*{a-bhover-color}*/
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#f40044/*{a-bhover-background-start}*/), to(#f40044 /*{a-bhover-background-end}*/)) !important; /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #f40044 /*{a-bhover-background-start}*/, #f40044 /*{a-bhover-background-end}*/) !important; /* Chrome 10+, Saf5.1+ */
+	}
+ .ui-bar-a  #hot {
+	background: 			#990000 !important/*{a-bar-background-color}*/;
+	color: 					#ffffff !important/*{a-bar-color}*/;
+	border-top: 0px !important;
+	border-right: 0px !important;
+	border-bottom: 0px !important;
+	border-left: 1px !important;
+	border-style:solid !important;
+	border-color:gray !important;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#b9002b /*{a-bar-background-start}*/), to(#df0034 /*{a-bar-background-end}*/)) !important; /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #b9002b /*{a-bar-background-start}*/, #df0034 /*{a-bar-background-end}*/) !important; /* Chrome 10+, Saf5.1+ */
+	}
+	
+	.ui-bar-a  #hotsel {
+	background: 			#990000 !important/*{a-bar-background-color}*/;
+	color: 					#FCE444 !important/*{a-bar-color}*/;
+	border-top: 0px !important;
+	border-right: 0px !important;
+	border-bottom: 0px !important;
+	border-left: 1px !important;
+	border-style:solid !important;
+	border-color:gray !important;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#b9002b /*{a-bar-background-start}*/), to(#df0034 /*{a-bar-background-end}*/)) !important; /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #b9002b /*{a-bar-background-start}*/, #df0034 /*{a-bar-background-end}*/) !important; /* Chrome 10+, Saf5.1+ */
+	}
+	.ui-bar-a  #near {
+	
+	color: gray !important/*{a-bar-color}*/;
+	border-top: 0px !important;
+	border-right: 0px !important;
+	border-bottom: 0px !important;
+	border-left: 0px !important;
+	border-style:solid !important;
+	background-image:url(images/menu-gradient.png)!important;
+	background-repeat:repeat !important;
+	background-size:100% !important;
+	
+	}
+	.ui-bar-a  #inbox {
+	background: 			#2d2d2d  !important/*{a-bar-background-color}*/;
+	color: 					#ffffff !important/*{a-bar-color}*/;
+	border-left: 1px !important;
+	border-top: 0px !important;
+	border-right: 0px !important;
+	border-bottom: 0px !important;
+	border-style:solid !important;
+	border-color:gray !important;
+	background-image:url(images/menu-gradient.png)!important;
+	background-repeat:repeat !important;
+	background-size:100% !important;
+	}
+	.ui-bar-a  #inbox:hover {
+	background: 			#3c3c3c  !important/*{a-bar-background-color}*/;
+	color: 					#ffffff !important/*{a-bar-color}*/;
+	border-left: 1px !important;
+	border-style:solid !important;
+	border-color:gray !important;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#494848 /*{a-bar-background-start}*/), to(#494848 /*{a-bar-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #494848 /*{a-bar-background-start}*/, #494848 /*{a-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
+
+	}
+	.ui-bar-a  #add:hover {
+	background: 			#3c3c3c  !important/*{a-bar-background-color}*/;
+	
+	color: 					#ffffff !important/*{a-bar-color}*/;
+	border-left: 1px !important;
+	border-style:solid !important;
+	border-color:gray !important;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c /*{a-bar-background-start}*/), to(#111 /*{a-bar-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #3c3c3c /*{a-bar-background-start}*/, #111 /*{a-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
+
+	}
+	.ui-bar-a  #more:hover {
+	background: 			#3c3c3c  !important/*{a-bar-background-color}*/;
+	color: 					#gray !important/*{a-bar-color}*/;
+	border-left: 1px !important;
+	border-style:solid !important;
+	border-color:gray !important;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c /*{a-bar-background-start}*/), to(#111 /*{a-bar-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #3c3c3c /*{a-bar-background-start}*/, #111 /*{a-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
+
+	}
+	.ui-bar-a  #addsel {
+	background: 			#3c3c3c  !important/*{a-bar-background-color}*/;
+	color: 					#3FB5F8 !important/*{a-bar-color}*/;
+	border-left: 1px !important;
+	border-style:solid !important;
+	border-color:gray !important;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c /*{a-bar-background-start}*/), to(#111 /*{a-bar-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #3c3c3c /*{a-bar-background-start}*/, #111 /*{a-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
+
+	}
+	.ui-bar-a  #inboxsel {
+	background: 			#3c3c3c  !important/*{a-bar-background-color}*/;
+	color: 					#3FB5F8 !important/*{a-bar-color}*/;
+	border-left: 1px !important;
+	border-style:solid !important;
+	border-color:gray !important;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#3c3c3c /*{a-bar-background-start}*/), to(#111 /*{a-bar-background-end}*/)); /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #3c3c3c /*{a-bar-background-start}*/, #111 /*{a-bar-background-end}*/); /* Chrome 10+, Saf5.1+ */
+
+	}
+	.ui-bar-a  #more {
+	background: 			#2d2d2d  !important/*{a-bar-background-color}*/;
+	color: 					gray !important/*{a-bar-color}*/;
+	border-left: 1px !important;
+	border-style:solid !important;
+	border-color:gray !important;
+	background-image:url(images/menu-gradient.png)!important;
+	background-repeat:repeat !important;
+	background-size:100% !important;
+	}
+	.ui-bar-a  #add {
+	background: 			#2d2d2d !important/*{a-bar-background-color}*/;
+	color: 					#ffffff !important/*{a-bar-color}*/;
+	border-left: 1px !important;
+	border-style:solid !important;
+	border-color:gray !important;
+	background-image:url(images/menu-gradient.png)!important;
+	background-repeat:repeat !important;
+	background-size:100% !important;
+}
+	 .ui-bar-a #near:hover{
+	color:#a6a6a6 !important /*{a-bhover-color}*/;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#494848 /*{a-bar-background-start}*/), to(#3f3f3e /*{a-bar-background-end}*/)) !important; /* Saf4+, Chrome */
+	background-image: -webkit-linear-gradient(top, #494848 /*{a-bar-background-start}*/, #494848 /*{a-bar-background-end}*/) !important;
+	/* Chrome 10+, Saf5.1+ */
+	}
+
+   .ui-icon-more {
+   box-shadow: none !important;
+	
+	 background: transparent !important;
+	 background-size:100%!important;
+	background-repeat:no-repeat !important;
+    background-image:url("images/icons/morei_disable.png") !important;/*I added the !important, I found that this rule was being overwritten*/
+	background-position: 	0px 50% !important;
+
+	-webkit-border-radius: 0px !important;
+	border-radius: 0px !important;}
+  .ui-icon-near_me {
+	box-shadow: none !important;
+
+	 background: transparent !important;
+	 background-size:100%!important;
+	background-repeat:no-repeat !important;	
+	box-shadow: none !important; 
+    background-image: url("images/icons/nearmei_disable.png") !important;/*I added the !important, I found that this rule was being overwritten*/
+	background-position: 	0px 0px !important;
+	}
+.ui-icon-addlist {
+	box-shadow: none !important;
+
+	 background: transparent !important;
+	 background-size:100%!important;
+			background-repeat:no-repeat !important;
+    background-image: url("images/icons/addlistingi.png") !important;/*I added the !important, I found that this rule was being overwritten*/
+	background-position: 	0px 0px !important;
+	}
+	
+.ui-icon-addlistsel {
+	box-shadow: none !important;
+
+	 background: transparent !important;
+	 background-size:100%!important;
+			background-repeat:no-repeat !important;
+    background-image: url("images/icons/addlistingi_hover.png") !important;/*I added the !important, I found that this rule was being overwritten*/
+	background-position: 	0px 0px !important;
+	}
+	.ui-icon-inbox {
+	box-shadow: none !important;
+	
+	 background: transparent !important;
+	 background-size:100%!important;
+	background-repeat:no-repeat !important;
+    background-image: url("images/icons/inboxi.png") !important;/*I added the !important, I found that this rule was being overwritten*/
+	background-position: 	0px 0px !important;
+	-webkit-border-radius: 0px !important;
+	border-radius: 0px !important;
+	}
+	.ui-icon-inboxsel {
+	box-shadow: none !important;
+	
+	 background: transparent !important;
+	 background-size:100%!important;
+	background-repeat:no-repeat !important;
+    background-image: url("images/icons/inboxi_hover.png") !important;/*I added the !important, I found that this rule was being overwritten*/
+	background-position: 	0px 0px !important;
+	-webkit-border-radius: 0px !important;
+	border-radius: 0px !important;
+	}
+
+
+.sub 
+{
+color: white !important;
+background-color: #d91671 !important/*{a-bar-background-color}*/;
+background-image: -webkit-gradient(linear, left top, left bottom, from( #d91671 /*{a-bar-background-start}*/), to( #d91671 /*{a-bar-background-end}*/))!important; /* Saf4+, Chrome */
+background-image: -webkit-linear-gradient(top,  #d91671 /*{a-bar-background-start}*/,  #d91671 /*{a-bar-background-end}*/)!important; /* Chrome 10+, Saf5.1+ */
+font-weight:500;
+}
+
+
+.custom_bullet {
+background:url(images/bullet.png) no-repeat;
+background-size:10px 10px;
+background-position:5px 5px;
+max-width:50%;
+padding-left: 25px; /* padding is based on the width of your custom image*/
+}
+.custom_bullet1 {
+background:url(images/bullet.png) no-repeat;
+background-size:10px 10px;
+background-position:5px 5px;
+padding-left: 25px; /* padding is based on the width of your custom image*/
+}
+
+
+
+.custom_address {
+background:url(images/address_icon.png) no-repeat;
+background-size:15px 15px;
+background-position:5px 5px;
+
+padding-left: 25px; /* padding is based on the width of your custom image*/
+} 
+.custom_mobile{
+background:url(images/mobile_icon.png) no-repeat;
+background-size:15px 15px;
+background-position:5px 5px;
+
+padding-left: 25px; /* padding is based on the width of your custom image*/
+}
+.custom_tel{
+background:url(images/phone_icon.png) no-repeat;
+background-size:15px 15px;
+background-position:5px 5px;
+
+padding-left: 25px; /* padding is based on the width of your custom image*/
+}
+.custom_website{
+background:url(images/website_icon.png) no-repeat;
+background-size:20px 20px;
+background-position:2px 5px;
+
+padding-left: 25px; /* padding is based on the width of your custom image*/
+}
+.custom_hours{
+background:url(images/hours_operation_icon.png) no-repeat;
+background-size:15px 15px;
+background-position:0px 0px;
+padding-left: 20px; /* padding is based on the width of your custom image*/
+}
+.custom_mail{
+background:url(images/email_icon.png) no-repeat;
+background-size:15px 15x;
+background-position:0px 5px;
+padding-left: 25px; /* padding is based on the width of your custom image*/
+}
+.custom_hot{
+background:url(images/deal_tag.png) no-repeat;
+background-size:25px 25px;
+background-position:0px 0px;
+padding-left: 30px; /* padding is based on the width of your custom image*/
+}
+.custom_map{
+background:url(images/viewmap_icon.png) no-repeat;
+background-size:15px 15px;
+background-position:0px 0px;
+padding-left: 20px; /* padding is based on the width of your custom image*/
+}
+.custom_gal{
+background:url(images/photo_gallery_icon.png) no-repeat;
+background-size:15px 15px;
+background-position:0px 0px;
+
+padding-left: 20px; /* padding is based on the width of your custom image*/
+}
+.custom_email {
+background:url(images/details_email_icon.png) no-repeat;
+background-size:15px 15px;
+background-position:0px 0px;
+max-width:50%;
+padding-left: 25px; /* padding is based on the width of your custom image*/
+}
+.custom_contact {
+background:url(images/person_icon.png) no-repeat;
+background-size:15px 15px;
+background-position:5px 5px;
+padding-left: 25px; /* padding is based on the width of your custom image*/
+}   
+
+#near .ui-btn-text  {
+     /* Play with font size of the text */
+	 font-size:90% !important;
+	  font-weight: 500 !important;
+}
+#hot .ui-btn-text  {
+     /* Play with font size of the text */
+	 font-size:90% !important;
+	  font-weight: 500 !important;
+}
+#add  .ui-btn-text  {
+     /* Play with font size of the text */
+	 font-size:90% !important;
+	  font-weight: 500 !important;
+}
+#more  .ui-btn-text  {
+     /* Play with font size of the text */
+	 font-size:90% !important;
+	  font-weight: 500 !important;
+}
+#inbox .ui-btn-text  {
+     /* Play with font size of the text */
+	 font-size:90% !important;
+	 font-weight: 500 !important;
+}
+#hotsel .ui-btn-text  {
+     /* Play with font size of the text */
+	 font-size:90% !important;
+	 font-weight: 500 !important;
+}
+#addsel .ui-btn-text  {
+     /* Play with font size of the text */
+	 font-size:90% !important;
+	 font-weight: 500 !important;
+}
+#inboxsel .ui-btn-text  {
+     /* Play with font size of the text */
+	 font-size:90% !important;
+	 font-weight: 500 !important;
+}
